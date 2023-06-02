@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <meta name='author' content='calebmarcelino2'>
+        <meta name='descryption' content='um simples jogo'>
+        <title>Game</title>
+        <style>
+            div img{
+               
+                width: 100;
+                height: 100;
+                border: 6px solid black;
+                animation: piscar 0.5s infinite;    
+            }
+            @keyframes piscar{
+            
+                50%{
+                
+                    border-color: black;
+                }
+            }
+            #avatares{           
+                    margin-left: 120;
+                    width: 230;
+                    height: 40;
+            }
+              #continuar{           
+                    margin-left: 120;
+                    width: 230;
+                    height: 40;
+            }
+            article{
+            
+                position: relative;
+            }
+            #escolha{
+                
+                position: absolute;
+                margin-left: 758;
+                font-size: 40;
+                animation: escolha_avatar 2s infinite;  
+               
+            }
+            
+            @keyframes escolha_avatar{
+                
+                0%{
+                    color: white;
+                }
+                50%{
+                   
+                    color: black;
+                    
+                }
+                60%{
+                    color: white;
+                  
+                }
+                90%{
+                
+                     color: black;
+                }
+            }
+
+            section span{
+                     color: #ffffff;
+                     animation: titulo 2s infinite;
+            }
+            
+            @keyframes titulo{
+                        
+                40%{
+           
+                   color: #0000ff;  
+                }
+                90%{
+                   color: #ffffff;
+                }
+            
+            }
+            body button{
+            
+                cursor: pointer;
+            }
+            
+            #animation_nave{
+            
+                position: absolute;
+                margin-top: -200;
+                margin-left: -130;
+                animation: nave_animation 12s linear;
+            
+            }
+            
+            @keyframes nave_animation{
+            
+                5%{
+          
+                    margin-top: 200;
+                  
+                }
+                10%{
+                
+                   margin-top: 400;
+                }
+                
+                20%{
+                
+                    margin-left: 800;
+                }
+                30%{
+                
+                     margin-left: 1400; 
+                     margin-top: -200;
+                }
+                40%{
+                 
+                     margin-top: -100;
+                     margin-left: 900;
+            }
+               
+               
+            </style>
+        </head>
+    <body>
+        <img src = 'img/player/Evasion (1).png' id='animation_nave'/>
+        <div>
+            <span></span>
+            </div>
+        <script src='./scripts/main.js'>
+            </script>
+        </body>
+    </html>
